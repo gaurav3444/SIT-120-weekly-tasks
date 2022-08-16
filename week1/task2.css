@@ -1,0 +1,29 @@
+.image {
+    position: relative;
+    left: 20px;
+    width: 50%;
+    height: 80%;
+}
+
+.intro, .interests {
+    position: relative;
+    left: 15px;
+
+}
+
+#container {
+
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+h1 {
+    color: darkred;
+}
+
+#todolist {
+    color:blueviolet;
+    text-decoration: underline;
+    font-weight: bold;
+}
