@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task2.css">
+    <script src="week1-tasks.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>assignment 2 weekly-tasks</title>
+    
+</head>
+
+
+<body>
+
+    <header id="MAIN-HEADER">
+        <div class="container">
+            <h1>My website</h1>
+        </div>
+    </header>
+    
+    <div id="container">
+
+        <nav id="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+
+        </nav>
+        
+        <div class="intro">
+            <h1>Hi, I'm Gaurav!</h1>
+            <h4> i am currently studying Bachelor of Information Technology at </h4>
+            <h4>Deakin University in  Austrlia</h4>
+        </div>
+    
+        <div class="interests">
+            <p>
+                Since my childhood, I was always fascinated with computer professionals, as to how they were communicating with the system with the use of binary numbers and getting desired results. My keen interest areas are Problem Solving, Planning and organizing, and Finding the logic behind how coding language works which inspired me to choose Information Technology as my career aspiration. As it is one of the fastest-growing sectors worldwide and enables us to explore and learn something new every day. 
+            </p>
+        </div>
+    
+        <div class="image">
+            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGXYQg-MnxEAQ/profile-displayphoto-shrink_400_400/0/1648962893867?e=1664409600&v=beta&t=F_bhQJnUfLOl1ugaIJ0DKGjeTJa-ExN2dBXqjGncW8A" alt="a picture of gaurav sharma">
+        </div>
+    
+        <div class="links">
+
+            <br>
+            <a href="https://www.linkedin.com/in/gaurav-sharma-600659236/">linkedin</a>
+            <a href = "mailto: 3444gauravsharma@gmail.com">Gmail</a>
+            <a href="https://www.linkedin.com/in/gaurav-sharma-600659236/">Github</a>
+            <p> </p>
+    
+        </div>
+    </div>
+
+    <!-- javascript button for date and time -->
+    <br>
+    <hr>
+    <button onclick="getDate()">Click for Date & time</button>
+    <p id="date"></p>
+    <hr>
+
+    <!-- vue app to create a to-do list -->
+
+    <p id="todolist">To-do list </p>
+
+    <div id="app">
+        <div 
+           v-for="todo in todos" 
+           :keys="todo.title" 
+           :style="{ textDecoration: todo.checked? 'line-through':'none' }"
+        >
+           <input type="checkbox" v-model="todo.checked" />
+           {{ todo.title}}
+        </div> 
+        <input 
+        placeholder="Add Tasks to do"
+        v-model="newItem"
+        @keyup.enter="addItem">
+    </div>
+
+</body>
+</html>
+<script src="week1-tasks2.js"></script>

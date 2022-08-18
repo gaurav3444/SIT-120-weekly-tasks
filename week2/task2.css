@@ -1,0 +1,71 @@
+
+.image {
+    position: relative;
+    left: 20px;
+    width: 50%;
+    height: 80%;
+}
+
+.intro, .interests {
+    position: relative;
+    left: 15px;
+
+}
+
+
+#container {
+
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+h1 {
+    color: darkred;
+}
+
+#todolist {
+    color:blueviolet;
+    text-decoration: underline;
+    font-weight: bold;
+}
+ /* ///////////////////////////////////////////////////// */
+body {
+    background-color: antiquewhite;
+}
+#MAIN-HEADER {
+    text-align: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #navbar li {
+    float: left;
+  }
+  
+  #navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #navbar li a:hover {
+    background-color: #111;
+  }
+
+  #navbar .active {
+    background-color: green;
+  }
+
+  .links {
+    position: relative;
+    left: 15px;
+}
