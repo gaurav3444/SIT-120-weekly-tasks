@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 2 weekly-tasks</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        
+        <div>
+            <h1 v-show="condition">Hello</h1>
+            <h1 v-if="condition_1">SIT-120 is awesome..!</h1>
+            <h1 v-else>Oh no 😢</h1>
+        </div>
+        
+      <div>
+        <ol>
+            <li v-for="item in todos">
+                {{item.text}}
+            </li>
+        </ol>
+      </div>
+        
+    </div>
+
+</body>
+</html>
+<script>
+
+    let vue = new Vue({
+        el: '#app',
+        data: {
+            condition: true,
+            condition_1: true,
+            todos: [
+                {text: 'complete assignment 1 of unit xxx' },
+                {text: 'complete tasksheet of unit xxx'},
+                {text: 'revise lecture slides'},
+            ],
+        }
+    })
+</script>
