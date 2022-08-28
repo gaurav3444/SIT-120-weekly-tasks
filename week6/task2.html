@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 2 weekly-tasks</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <ol>
+               <li><input type="checkbox" value="First option" v-model="checkedValues"> 
+                <label for="" >First option</label></li>
+                <li><input type="checkbox" value="Second option" v-model="checkedValues">
+                <label for="" >Second option</label></li>
+                <li><input type="checkbox" value="Third option" v-model="checkedValues">
+                <label for="" >Third option</label></li>
+                <li><input type="checkbox" value="Fourth option" v-model="checkedValues">
+                <label for="" >Fourth option</label></li>
+                <li><input type="checkbox" value="Fifth option" v-model="checkedValues">
+                <label for="" >Fifth option</label></li>
+            </ol>
+            <br>
+            the checked items are:
+            {{ checkedValues }}
+        </div>
+    </div> 
+</body>
+</html>
+<script src="task2.js"></script>
