@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+    <style>
+        .component-props {
+            display: block;
+            background-color: gold;
+            height: 100px;
+            text-align: center;
+            padding-top: 4em;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+
+        <div class="component-props">
+            <component-props inline-template propsname="Props Value Passed">
+                <div>
+                  {{message}}
+                  <br>
+                  {{propsname}}
+                </div>
+            </component-props>
+        </div>
+    </div>
+
+    <script>
+        Vue.component('component-props',{
+                props: ["propsname"],
+            data() {
+                return {
+                    message: "Hello From Props Component!"
+                }
+            }
+        })
+
+        new Vue({
+        el: '#app',
+        data() {
+            return {
+
+            }
+        },
+    })
+    </script>
+    
+</body>
+</html>
